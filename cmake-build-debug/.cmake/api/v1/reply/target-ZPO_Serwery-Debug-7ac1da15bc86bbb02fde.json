@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g"
 				}
 			],
 			"language" : "CXX",
@@ -138,7 +138,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "P/storage_types.h",
+			"path" : "P/storage_types.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],
