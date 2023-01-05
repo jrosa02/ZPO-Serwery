@@ -24,6 +24,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P"/>
 					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest/include"/>
 					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
@@ -48,6 +49,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P"/>
 					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest/include"/>
 					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>

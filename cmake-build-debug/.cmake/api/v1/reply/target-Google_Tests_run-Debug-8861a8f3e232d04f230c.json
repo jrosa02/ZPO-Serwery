@@ -35,7 +35,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -59,11 +65,15 @@
 			[
 				{
 					"backtrace" : 3,
+					"path" : "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P"
+				},
+				{
+					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest"
 				}

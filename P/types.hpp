@@ -5,6 +5,6 @@
 #ifndef ZPO_SERWERY_TYPES_HPP
 #define ZPO_SERWERY_TYPES_HPP
 //TODO refractor ElementID
-using ElementID = int;
+using ElementID = unsigned int;
 
 #endif //ZPO_SERWERY_TYPES_HPP
