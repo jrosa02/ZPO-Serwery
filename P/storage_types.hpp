@@ -18,7 +18,7 @@ public:
     virtual void push(Package&& apackage) = 0;
     virtual bool empty() = 0;
     virtual std::size_t size() = 0;
-    /*iteratory*///FIXME trzeba będzie zmienić typ na ten zjebany z vektora????????????????
+    /*iteratory*///FIXME trzeba będzie zmienić typ na ten zjebany z vektora/list????????????????
     virtual int* begin() = 0;
     virtual int* cbegin() = 0;
     virtual int* end() = 0;
@@ -31,6 +31,8 @@ class IPackageQueue: IPackageStockpile {
 public:
     virtual Package pop() = 0;
     virtual PackageQueueType get_queue_type() = 0;
+private:
+    PackageQueueType pkcQtype;
 };
 
 class PackageQueue: IPackageStockpile {
@@ -40,7 +42,6 @@ public:
 
 private:
     std::list<Package> storageplace;
-
 };
 
 
