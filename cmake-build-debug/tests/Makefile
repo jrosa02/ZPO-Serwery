@@ -174,29 +174,53 @@ Google_Tests_run/fast:
 	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/build
 .PHONY : Google_Tests_run/fast
 
-P_test.obj: P_test.cpp.obj
-.PHONY : P_test.obj
+P_tests/PackageQueue_test.obj: P_tests/PackageQueue_test.cpp.obj
+.PHONY : P_tests/PackageQueue_test.obj
 
 # target to build an object file
-P_test.cpp.obj:
-	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj
-.PHONY : P_test.cpp.obj
+P_tests/PackageQueue_test.cpp.obj:
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj
+.PHONY : P_tests/PackageQueue_test.cpp.obj
 
-P_test.i: P_test.cpp.i
-.PHONY : P_test.i
+P_tests/PackageQueue_test.i: P_tests/PackageQueue_test.cpp.i
+.PHONY : P_tests/PackageQueue_test.i
 
 # target to preprocess a source file
-P_test.cpp.i:
-	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.i
-.PHONY : P_test.cpp.i
+P_tests/PackageQueue_test.cpp.i:
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.i
+.PHONY : P_tests/PackageQueue_test.cpp.i
 
-P_test.s: P_test.cpp.s
-.PHONY : P_test.s
+P_tests/PackageQueue_test.s: P_tests/PackageQueue_test.cpp.s
+.PHONY : P_tests/PackageQueue_test.s
 
 # target to generate assembly for a file
-P_test.cpp.s:
-	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.s
-.PHONY : P_test.cpp.s
+P_tests/PackageQueue_test.cpp.s:
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.s
+.PHONY : P_tests/PackageQueue_test.cpp.s
+
+P_tests/Package_test.obj: P_tests/Package_test.cpp.obj
+.PHONY : P_tests/Package_test.obj
+
+# target to build an object file
+P_tests/Package_test.cpp.obj:
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj
+.PHONY : P_tests/Package_test.cpp.obj
+
+P_tests/Package_test.i: P_tests/Package_test.cpp.i
+.PHONY : P_tests/Package_test.i
+
+# target to preprocess a source file
+P_tests/Package_test.cpp.i:
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.i
+.PHONY : P_tests/Package_test.cpp.i
+
+P_tests/Package_test.s: P_tests/Package_test.cpp.s
+.PHONY : P_tests/Package_test.s
+
+# target to generate assembly for a file
+P_tests/Package_test.cpp.s:
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\Google_Tests_run.dir\build.make tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.s
+.PHONY : P_tests/Package_test.cpp.s
 
 # Help Target
 help:
@@ -211,9 +235,12 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Google_Tests_run
-	@echo ... P_test.obj
-	@echo ... P_test.i
-	@echo ... P_test.s
+	@echo ... P_tests/PackageQueue_test.obj
+	@echo ... P_tests/PackageQueue_test.i
+	@echo ... P_tests/PackageQueue_test.s
+	@echo ... P_tests/Package_test.obj
+	@echo ... P_tests/Package_test.i
+	@echo ... P_tests/Package_test.s
 .PHONY : help
 
 

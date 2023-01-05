@@ -69,6 +69,7 @@ include CMakeFiles/ZPO_Serwery.dir/progress.make
 include CMakeFiles/ZPO_Serwery.dir/flags.make
 
 CMakeFiles/ZPO_Serwery.dir/main.cpp.obj: CMakeFiles/ZPO_Serwery.dir/flags.make
+CMakeFiles/ZPO_Serwery.dir/main.cpp.obj: CMakeFiles/ZPO_Serwery.dir/includes_CXX.rsp
 CMakeFiles/ZPO_Serwery.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/ZPO_Serwery.dir/main.cpp.obj: CMakeFiles/ZPO_Serwery.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ZPO_Serwery.dir/main.cpp.obj"
@@ -83,6 +84,7 @@ CMakeFiles/ZPO_Serwery.dir/main.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\main.cpp -o CMakeFiles\ZPO_Serwery.dir\main.cpp.s
 
 CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj: CMakeFiles/ZPO_Serwery.dir/flags.make
+CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj: CMakeFiles/ZPO_Serwery.dir/includes_CXX.rsp
 CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj: ../P/package.cpp
 CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj: CMakeFiles/ZPO_Serwery.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj"
@@ -97,6 +99,7 @@ CMakeFiles/ZPO_Serwery.dir/P/package.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\P\package.cpp -o CMakeFiles\ZPO_Serwery.dir\P\package.cpp.s
 
 CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj: CMakeFiles/ZPO_Serwery.dir/flags.make
+CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj: CMakeFiles/ZPO_Serwery.dir/includes_CXX.rsp
 CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj: ../P/storage_types.cpp
 CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj: CMakeFiles/ZPO_Serwery.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj"
@@ -110,26 +113,27 @@ CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\P\storage_types.cpp -o CMakeFiles\ZPO_Serwery.dir\P\storage_types.cpp.s
 
-CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj: CMakeFiles/ZPO_Serwery.dir/flags.make
-CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj: ../tests/P_test.cpp
-CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj: CMakeFiles/ZPO_Serwery.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj -MF CMakeFiles\ZPO_Serwery.dir\tests\P_test.cpp.obj.d -o CMakeFiles\ZPO_Serwery.dir\tests\P_test.cpp.obj -c C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_test.cpp
+CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj: CMakeFiles/ZPO_Serwery.dir/flags.make
+CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj: CMakeFiles/ZPO_Serwery.dir/includes_CXX.rsp
+CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj: ../tests/P_tests/PackageQueue_test.cpp
+CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj: CMakeFiles/ZPO_Serwery.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj -MF CMakeFiles\ZPO_Serwery.dir\tests\P_tests\PackageQueue_test.cpp.obj.d -o CMakeFiles\ZPO_Serwery.dir\tests\P_tests\PackageQueue_test.cpp.obj -c C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\PackageQueue_test.cpp
 
-CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_test.cpp > CMakeFiles\ZPO_Serwery.dir\tests\P_test.cpp.i
+CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\PackageQueue_test.cpp > CMakeFiles\ZPO_Serwery.dir\tests\P_tests\PackageQueue_test.cpp.i
 
-CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_test.cpp -o CMakeFiles\ZPO_Serwery.dir\tests\P_test.cpp.s
+CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\PackageQueue_test.cpp -o CMakeFiles\ZPO_Serwery.dir\tests\P_tests\PackageQueue_test.cpp.s
 
 # Object files for target ZPO_Serwery
 ZPO_Serwery_OBJECTS = \
 "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj" \
 "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj" \
 "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj" \
-"CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj"
+"CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj"
 
 # External object files for target ZPO_Serwery
 ZPO_Serwery_EXTERNAL_OBJECTS =
@@ -137,7 +141,7 @@ ZPO_Serwery_EXTERNAL_OBJECTS =
 ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/main.cpp.obj
 ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj
 ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj
-ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj
+ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj
 ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/build.make
 ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/linklibs.rsp
 ZPO_Serwery.exe: CMakeFiles/ZPO_Serwery.dir/objects1.rsp

@@ -68,29 +68,46 @@ include tests/CMakeFiles/Google_Tests_run.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/Google_Tests_run.dir/flags.make
 
-tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/flags.make
-tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/includes_CXX.rsp
-tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj: ../tests/P_test.cpp
-tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj"
-	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj -MF CMakeFiles\Google_Tests_run.dir\P_test.cpp.obj.d -o CMakeFiles\Google_Tests_run.dir\P_test.cpp.obj -c C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_test.cpp
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/flags.make
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/includes_CXX.rsp
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj: ../tests/P_tests/PackageQueue_test.cpp
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj"
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj -MF CMakeFiles\Google_Tests_run.dir\P_tests\PackageQueue_test.cpp.obj.d -o CMakeFiles\Google_Tests_run.dir\P_tests\PackageQueue_test.cpp.obj -c C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\PackageQueue_test.cpp
 
-tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/P_test.cpp.i"
-	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_test.cpp > CMakeFiles\Google_Tests_run.dir\P_test.cpp.i
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.i"
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\PackageQueue_test.cpp > CMakeFiles\Google_Tests_run.dir\P_tests\PackageQueue_test.cpp.i
 
-tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/P_test.cpp.s"
-	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_test.cpp -o CMakeFiles\Google_Tests_run.dir\P_test.cpp.s
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.s"
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\PackageQueue_test.cpp -o CMakeFiles\Google_Tests_run.dir\P_tests\PackageQueue_test.cpp.s
+
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/flags.make
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/includes_CXX.rsp
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj: ../tests/P_tests/Package_test.cpp
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj: tests/CMakeFiles/Google_Tests_run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj"
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj -MF CMakeFiles\Google_Tests_run.dir\P_tests\Package_test.cpp.obj.d -o CMakeFiles\Google_Tests_run.dir\P_tests\Package_test.cpp.obj -c C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\Package_test.cpp
+
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.i"
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\Package_test.cpp > CMakeFiles\Google_Tests_run.dir\P_tests\Package_test.cpp.i
+
+tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.s"
+	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\tests\P_tests\Package_test.cpp -o CMakeFiles\Google_Tests_run.dir\P_tests\Package_test.cpp.s
 
 # Object files for target Google_Tests_run
 Google_Tests_run_OBJECTS = \
-"CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj"
+"CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj" \
+"CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj"
 
 # External object files for target Google_Tests_run
 Google_Tests_run_EXTERNAL_OBJECTS =
 
-tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj
+tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj
+tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/build.make
 tests/Google_Tests_run.exe: lib/libgtest.a
 tests/Google_Tests_run.exe: lib/libgtest_main.a
@@ -98,7 +115,7 @@ tests/Google_Tests_run.exe: lib/libgtest.a
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/linklibs.rsp
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/objects1.rsp
 tests/Google_Tests_run.exe: tests/CMakeFiles/Google_Tests_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Google_Tests_run.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Google_Tests_run.exe"
 	cd /d C:\Users\janro\Desktop\AGH_FILES\ZPO-Serwery\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Google_Tests_run.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

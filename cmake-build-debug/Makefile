@@ -310,29 +310,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tests/P_test.obj: tests/P_test.cpp.obj
-.PHONY : tests/P_test.obj
+tests/P_tests/PackageQueue_test.obj: tests/P_tests/PackageQueue_test.cpp.obj
+.PHONY : tests/P_tests/PackageQueue_test.obj
 
 # target to build an object file
-tests/P_test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.obj
-.PHONY : tests/P_test.cpp.obj
+tests/P_tests/PackageQueue_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj
+.PHONY : tests/P_tests/PackageQueue_test.cpp.obj
 
-tests/P_test.i: tests/P_test.cpp.i
-.PHONY : tests/P_test.i
+tests/P_tests/PackageQueue_test.i: tests/P_tests/PackageQueue_test.cpp.i
+.PHONY : tests/P_tests/PackageQueue_test.i
 
 # target to preprocess a source file
-tests/P_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.i
-.PHONY : tests/P_test.cpp.i
+tests/P_tests/PackageQueue_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.i
+.PHONY : tests/P_tests/PackageQueue_test.cpp.i
 
-tests/P_test.s: tests/P_test.cpp.s
-.PHONY : tests/P_test.s
+tests/P_tests/PackageQueue_test.s: tests/P_tests/PackageQueue_test.cpp.s
+.PHONY : tests/P_tests/PackageQueue_test.s
 
 # target to generate assembly for a file
-tests/P_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/tests/P_test.cpp.s
-.PHONY : tests/P_test.cpp.s
+tests/P_tests/PackageQueue_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.s
+.PHONY : tests/P_tests/PackageQueue_test.cpp.s
 
 # Help Target
 help:
@@ -361,9 +361,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... tests/P_test.obj
-	@echo ... tests/P_test.i
-	@echo ... tests/P_test.s
+	@echo ... tests/P_tests/PackageQueue_test.obj
+	@echo ... tests/P_tests/PackageQueue_test.i
+	@echo ... tests/P_tests/PackageQueue_test.s
 .PHONY : help
 
 

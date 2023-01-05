@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/P_test.cpp" "tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj" "gcc" "tests/CMakeFiles/Google_Tests_run.dir/P_test.cpp.obj.d"
+  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/P_tests/PackageQueue_test.cpp" "tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj" "gcc" "tests/CMakeFiles/Google_Tests_run.dir/P_tests/PackageQueue_test.cpp.obj.d"
+  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/P_tests/Package_test.cpp" "tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj" "gcc" "tests/CMakeFiles/Google_Tests_run.dir/P_tests/Package_test.cpp.obj.d"
   )
 
 # Targets to which this target links.

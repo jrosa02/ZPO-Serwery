@@ -27,7 +27,6 @@ private:
     ElementID elementId;
     static std::vector<ElementID> assigned_IDs;
     static std::vector<ElementID> freed_IDs;
-
 };
 
 

@@ -24,6 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/include"/>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googlemock/include"/>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest/include"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
@@ -46,6 +49,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/include"/>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googlemock/include"/>
+					<Add directory="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest/include"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
@@ -388,8 +394,11 @@
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/main.cpp">
 			<Option target="ZPO_Serwery"/>
 		</Unit>
-		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/P_test.cpp">
+		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/P_tests/PackageQueue_test.cpp">
 			<Option target="ZPO_Serwery"/>
+			<Option target="Google_Tests_run"/>
+		</Unit>
+		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/P_tests/Package_test.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googlemock/src/gmock-all.cc">

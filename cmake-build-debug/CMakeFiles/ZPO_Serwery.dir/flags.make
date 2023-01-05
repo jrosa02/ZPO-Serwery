@@ -4,7 +4,7 @@
 # compile CXX with C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/ZPO_Serwery.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g
 
