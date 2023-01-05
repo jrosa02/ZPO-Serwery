@@ -1,0 +1,3 @@
+C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/cmake-build-debug/CMakeFiles/ZPO_Serwery.dir
+C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/cmake-build-debug/CMakeFiles/rebuild_cache.dir
