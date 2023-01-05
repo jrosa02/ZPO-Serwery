@@ -1,0 +1,1 @@
+-isystem "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googlemock/include" -isystem "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googlemock" -isystem "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest/include" -isystem "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/tests/lib/googletest"
