@@ -6,6 +6,7 @@
 #include "package.hpp"
 
 Package::Package() {
+    
     if(freed_IDs.empty()){
         auto p2newID = std::min(freed_IDs.begin(), freed_IDs.end());
         elementId = *p2newID;
@@ -28,22 +29,13 @@ Package::Package(ElementID id2assign) {
     }
 };
 
-Package::Package(Package &&apackage) {
-
-};
-
-Package &Package::operator=(Package &&) {
-
-};
-
 Package::~Package() {
     auto p2IDfreed = std::find(assigned_IDs.begin(), assigned_IDs.end(), elementId);
     if (p2IDfreed == assigned_IDs.end())
         //FIXME jak coś się zepsuje to wyrzuci
-        throw std::exception();
+        //throw std::exception();
     assigned_IDs.erase(p2IDfreed);
     freed_IDs.push_back(*p2IDfreed);
 
 };
-
 

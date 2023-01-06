@@ -7,17 +7,14 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeFindCodeBlocks.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake"
@@ -25,11 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPython/Support.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
@@ -39,22 +31,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/ProcessorCount.cmake"
-  "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.23.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeSystem.cmake"
-  "../tests/CMakeLists.txt"
-  "../tests/lib/CMakeLists.txt"
-  "../tests/lib/googlemock/CMakeLists.txt"
-  "../tests/lib/googlemock/cmake/gmock.pc.in"
-  "../tests/lib/googlemock/cmake/gmock_main.pc.in"
-  "../tests/lib/googletest/CMakeLists.txt"
-  "../tests/lib/googletest/cmake/Config.cmake.in"
-  "../tests/lib/googletest/cmake/gtest.pc.in"
-  "../tests/lib/googletest/cmake/gtest_main.pc.in"
-  "../tests/lib/googletest/cmake/internal_utils.cmake"
   )
 
 # The corresponding makefile is:
@@ -66,24 +47,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/lib/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/lib/googletest/generated/gmock.pc"
-  "tests/lib/googletest/generated/gmock_main.pc"
-  "tests/lib/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/lib/googletest/generated/GTestConfigVersion.cmake"
-  "tests/lib/googletest/generated/GTestConfig.cmake"
-  "tests/lib/googletest/generated/gtest.pc"
-  "tests/lib/googletest/generated/gtest_main.pc"
-  "tests/lib/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ZPO_Serwery.dir/DependInfo.cmake"
-  "tests/CMakeFiles/Google_Tests_run.dir/DependInfo.cmake"
-  "tests/lib/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "tests/lib/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

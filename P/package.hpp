@@ -12,10 +12,8 @@ class Package {
 public:
     Package();
     Package(ElementID id2assign);
-    //TODO
-    Package(Package&& apackage);
-    //TODO
-    Package& operator=(Package&&);
+    Package(Package&& apackage) {elementId = apackage.get_ID(); };
+    Package& operator=(Package&& other) { return *this;};
     ElementID get_ID() const {return elementId;};
     ~Package();
 
@@ -25,6 +23,12 @@ private:
     static std::vector<ElementID> freed_IDs;
 };
 
+class dummy{
+public:
+    dummy() = default;
+    ~dummy() = default;
+    int a;
+};
 
 
 

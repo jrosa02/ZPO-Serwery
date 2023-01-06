@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj.d"
   "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj"
   "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj.d"
-  "CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj"
-  "CMakeFiles/ZPO_Serwery.dir/tests/P_tests/PackageQueue_test.cpp.obj.d"
   "ZPO_Serwery.exe"
   "ZPO_Serwery.exe.manifest"
   "ZPO_Serwery.pdb"
