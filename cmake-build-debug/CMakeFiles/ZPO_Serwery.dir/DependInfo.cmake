@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/package.cpp" "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj.d"
-  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/storage_types.cpp" "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj.d"
-  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/main.cpp" "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj.d"
+  "C:/git/ZPO-Serwery/P/package.cpp" "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj.d"
+  "C:/git/ZPO-Serwery/P/storage_types.cpp" "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj.d"
+  "C:/git/ZPO-Serwery/main.cpp" "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
