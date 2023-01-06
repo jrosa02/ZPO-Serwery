@@ -12,15 +12,15 @@ class Package {
 public:
     Package();
     Package(ElementID id2assign);
-    Package(Package&& apackage) {elementId = apackage.get_ID(); };
+    Package(Package&& apackage) { elementId_ = apackage.get_ID(); };
     Package& operator=(Package&& other) { return *this;};
-    ElementID get_ID() const {return elementId;};
+    ElementID get_ID() const {return elementId_;};
     ~Package();
 
 private:
-    ElementID elementId;
-    static std::vector<ElementID> assigned_IDs;
-    static std::vector<ElementID> freed_IDs;
+    ElementID elementId_;
+    static std::vector<ElementID> assigned_IDs_;
+    static std::vector<ElementID> freed_IDs_;
 };
 
 class dummy{
