@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj.d"
   "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj"
   "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj.d"
+  "CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.obj"
+  "CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.obj.d"
   "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj"
   "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj.d"
   "ZPO_Serwery.exe"

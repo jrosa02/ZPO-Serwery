@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/package.cpp" "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj.d"
   "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/storage_types.cpp" "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj.d"
+  "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/tets_oftests.cpp" "CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.obj.d"
   "C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/main.cpp" "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj" "gcc" "CMakeFiles/ZPO_Serwery.dir/main.cpp.obj.d"
   )
 
