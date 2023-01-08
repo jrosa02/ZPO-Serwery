@@ -225,6 +225,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googletest-main/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+P/idiotic_test.obj: P/idiotic_test.cpp.obj
+.PHONY : P/idiotic_test.obj
+
+# target to build an object file
+P/idiotic_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.obj
+.PHONY : P/idiotic_test.cpp.obj
+
+P/idiotic_test.i: P/idiotic_test.cpp.i
+.PHONY : P/idiotic_test.i
+
+# target to preprocess a source file
+P/idiotic_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.i
+.PHONY : P/idiotic_test.cpp.i
+
+P/idiotic_test.s: P/idiotic_test.cpp.s
+.PHONY : P/idiotic_test.s
+
+# target to generate assembly for a file
+P/idiotic_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.s
+.PHONY : P/idiotic_test.cpp.s
+
 P/package.obj: P/package.cpp.obj
 .PHONY : P/package.obj
 
@@ -273,30 +297,6 @@ P/storage_types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.s
 .PHONY : P/storage_types.cpp.s
 
-P/tets_oftests.obj: P/tets_oftests.cpp.obj
-.PHONY : P/tets_oftests.obj
-
-# target to build an object file
-P/tets_oftests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.obj
-.PHONY : P/tets_oftests.cpp.obj
-
-P/tets_oftests.i: P/tets_oftests.cpp.i
-.PHONY : P/tets_oftests.i
-
-# target to preprocess a source file
-P/tets_oftests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.i
-.PHONY : P/tets_oftests.cpp.i
-
-P/tets_oftests.s: P/tets_oftests.cpp.s
-.PHONY : P/tets_oftests.s
-
-# target to generate assembly for a file
-P/tets_oftests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/tets_oftests.cpp.s
-.PHONY : P/tets_oftests.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -338,15 +338,15 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... P/idiotic_test.obj
+	@echo ... P/idiotic_test.i
+	@echo ... P/idiotic_test.s
 	@echo ... P/package.obj
 	@echo ... P/package.i
 	@echo ... P/package.s
 	@echo ... P/storage_types.obj
 	@echo ... P/storage_types.i
 	@echo ... P/storage_types.s
-	@echo ... P/tets_oftests.obj
-	@echo ... P/tets_oftests.i
-	@echo ... P/tets_oftests.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

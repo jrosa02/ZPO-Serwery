@@ -328,6 +328,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/idiotic_test.cpp">
+			<Option target="ZPO_Serwery"/>
+		</Unit>
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/package.cpp">
 			<Option target="ZPO_Serwery"/>
 		</Unit>
@@ -338,9 +341,6 @@
 			<Option target="ZPO_Serwery"/>
 		</Unit>
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/storage_types.hpp">
-			<Option target="ZPO_Serwery"/>
-		</Unit>
-		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/tets_oftests.cpp">
 			<Option target="ZPO_Serwery"/>
 		</Unit>
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/P/types.hpp">

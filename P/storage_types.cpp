@@ -5,7 +5,7 @@
 #include "storage_types.hpp"
 
 
-void PackageQueue::push(Package& apackage){
+void PackageQueue::push(Package&& apackage){
     switch(queueType_){
         case FIFO:
             storageplace_.emplace_front(std::move(apackage));
