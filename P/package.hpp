@@ -6,6 +6,7 @@
 #define ZPO_SERWERY_PACKAGE_HPP
 
 #include <vector>
+#include <set>
 #include "types.hpp"
 
 class Package {
@@ -19,8 +20,8 @@ public:
 
 private:
     ElementID elementId_;
-    static std::vector<ElementID> assigned_IDs_;
-    static std::vector<ElementID> freed_IDs_;
+    static std::set<ElementID> assigned_IDs_;
+    static std::set<ElementID> freed_IDs_;
 };
 
 class dummy{
