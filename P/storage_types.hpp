@@ -38,25 +38,26 @@ public:
 
 class PackageQueue: public IPackageQueue {
 public:
-    PackageQueue(PackageQueueType queueType) : queueType_(queueType), IPackageQueue() {}
+    PackageQueue(PackageQueueType queueType) : queueType_(queueType), IPackageQueue() {};
 
     void push(Package&& apackage) override;
 
     bool empty() const override { return storageplace_.empty();};
 
-    std::size_t size() const override { return storageplace_.size(); }
+    std::size_t size() const override { return storageplace_.size(); };
 
-    std::list<Package>::const_iterator cbegin() const override{ return storageplace_.cbegin(); }
+    std::list<Package>::const_iterator cbegin() const override{ return storageplace_.cbegin(); };
 
-    std::list<Package>::const_iterator cend() const override{ return storageplace_.cend(); }
+    std::list<Package>::const_iterator cend() const override{ return storageplace_.cend(); };
 
-    std::list<Package>::const_iterator begin() const { return storageplace_.cbegin(); }
+    std::list<Package>::const_iterator begin() const { return storageplace_.begin(); };
 
-    std::list<Package>::const_iterator end() const { return storageplace_.cend(); }
+    std::list<Package>::const_iterator end() const { return storageplace_.end(); };
 
     Package pop();
 
-    PackageQueueType get_queue_type() const { return queueType_; }
+    PackageQueueType get_queue_type() const { return queueType_; };
+
 
 private:
     const PackageQueueType queueType_;

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.obj"
-  "CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.obj.d"
   "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj"
   "CMakeFiles/ZPO_Serwery.dir/P/package.cpp.obj.d"
   "CMakeFiles/ZPO_Serwery.dir/P/storage_types.cpp.obj"

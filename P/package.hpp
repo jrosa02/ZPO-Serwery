@@ -24,13 +24,6 @@ private:
     static std::set<ElementID> freed_IDs_;
 };
 
-class dummy{
-public:
-    dummy() = default;
-    ~dummy() = default;
-    int a;
-};
-
 
 
 #endif //ZPO_SERWERY_PACKAGE_HPP

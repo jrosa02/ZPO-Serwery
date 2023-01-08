@@ -19,14 +19,8 @@ void PackageQueue::push(Package&& apackage){
 
 
 Package PackageQueue::pop(){
-    switch(queueType_){
-        case FIFO:
-            // Nie ma breaka, więc wykonają się instrukcje z bloku poniżej
-        case LIFO:
-            Package first_elem = std::move(*storageplace_.begin());
-            storageplace_.pop_front();
-            return first_elem;
-            break;
-    }
+    ElementID newID = storageplace_.begin()->get_ID();
+    storageplace_.pop_front();
+    return Package(newID);
 }
 

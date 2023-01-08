@@ -225,30 +225,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googletest-main/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-P/idiotic_test.obj: P/idiotic_test.cpp.obj
-.PHONY : P/idiotic_test.obj
-
-# target to build an object file
-P/idiotic_test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.obj
-.PHONY : P/idiotic_test.cpp.obj
-
-P/idiotic_test.i: P/idiotic_test.cpp.i
-.PHONY : P/idiotic_test.i
-
-# target to preprocess a source file
-P/idiotic_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.i
-.PHONY : P/idiotic_test.cpp.i
-
-P/idiotic_test.s: P/idiotic_test.cpp.s
-.PHONY : P/idiotic_test.s
-
-# target to generate assembly for a file
-P/idiotic_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery.dir\build.make CMakeFiles/ZPO_Serwery.dir/P/idiotic_test.cpp.s
-.PHONY : P/idiotic_test.cpp.s
-
 P/package.obj: P/package.cpp.obj
 .PHONY : P/package.obj
 
@@ -338,9 +314,6 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... P/idiotic_test.obj
-	@echo ... P/idiotic_test.i
-	@echo ... P/idiotic_test.s
 	@echo ... P/package.obj
 	@echo ... P/package.i
 	@echo ... P/package.s
