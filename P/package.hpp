@@ -21,8 +21,8 @@ public:
 
 private:
     ElementID elementId_;
-    static std::list<ElementID> inline assigned_IDs_{};
-    static std::list<ElementID> inline freed_IDs_{0};
+    static std::set<ElementID> inline assigned_IDs_{};
+    static std::set<ElementID> inline freed_IDs_{0};
 };
 
 
