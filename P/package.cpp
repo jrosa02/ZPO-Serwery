@@ -26,17 +26,19 @@ Package::Package(ElementID id2assign) {
         assigned_IDs_.push_back(id2assign);
     }else{
         //FIXME nie wiem co ma być w tym przypadku
-        elementId_ = (*std::max_element(freed_IDs_.begin(), freed_IDs_.end())) + 1;
+        ElementID newID = (*std::max_element(assigned_IDs_.begin(), assigned_IDs_.end())) + 1;
+        elementId_ = newID;
+        assigned_IDs_.push_back(newID);
     }
 };
 
 Package::~Package() {
     auto p2IDfreed = std::find(assigned_IDs_.begin(), assigned_IDs_.end(), elementId_);
-    if (p2IDfreed == assigned_IDs_.end())
+    //if (p2IDfreed == assigned_IDs_.end())
         //FIXME jak coś się zepsuje to wyrzuci
         //throw std::exception();
-    freed_IDs_.push_back(*p2IDfreed);
+    freed_IDs_.push_back(elementId_);
+    std::cout<<"DelID->"<<elementId_ << ' ';
     assigned_IDs_.erase(p2IDfreed);
-
 };
 

@@ -7,11 +7,11 @@
 
 void PackageQueue::push(Package&& apackage){
     switch(queueType_){
-        case FIFO:
+        case LIFO:
             storageplace_.emplace_front(std::move(apackage));
             break;
 
-        case LIFO:
+        case FIFO:
             storageplace_.emplace_back(std::move(apackage));
             break;
     }

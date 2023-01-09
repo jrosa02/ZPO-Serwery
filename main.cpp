@@ -10,23 +10,50 @@ int main() {
     Package paczka4;
     Package paczka5;
     std::cout << "Paczki maja rozne id" << std::endl;
-    std::cout << paczka1.get_id() << std::endl;
-    std::cout << paczka2.get_id() << std::endl;
-    std::cout << paczka3.get_id() << std::endl;
-    std::cout << paczka4.get_id() << std::endl;
-    std::cout << paczka5.get_id() << std::endl;
+    std::cout << paczka1.get_id() << '\t';
+    std::cout << paczka2.get_id() << '\t';
+    std::cout << paczka3.get_id() << '\t';
+    std::cout << paczka4.get_id() << '\t';
+    std::cout << paczka5.get_id() << '\t';
 
 
     // 2. testowanie kolejki
     // tworzenie kolejki (Fifooo) działa
-    PackageQueue nigg(PackageQueueType::FIFO);
+    PackageQueue nigg(FIFO);
+    std::cout << "Initialized Queue" << std::endl;
     // dodawanie elementów również działa
-    nigg.push(Package());
-    nigg.push(Package());
-    nigg.push(Package());
-    nigg.push(Package());
-    std::cout << "Goodbye, World!" << std::endl;
+    nigg.push(std::move(paczka1));
+    nigg.push(std::move(paczka2));
+    nigg.push(std::move(paczka3));
+    nigg.push(std::move(paczka4));
+    nigg.push(std::move(paczka5));
 
+    std::cout << "Filled Queue" << std::endl;
+//    std::cout << nigg.pop().get_id()<< '\t';
+//    std::cout << nigg.pop().get_id()<< '\t';
+//    std::cout << nigg.pop().get_id()<< '\t';
+//    std::cout << nigg.pop().get_id()<< '\t';
+//    std::cout << nigg.pop().get_id()<< '\t';
+//    std::cout << "Poped Queue" << std::endl;
 
+    std::cout << nigg.pop().get_id()<< '\t';
+    std::cout << nigg.pop().get_id()<< '\t';
+    std::cout << nigg.pop().get_id()<< '\t';
+    std::cout << "Some deleted" << std::endl;
+
+    Package paczka6;
+    Package paczka7;
+    Package paczka8;
+    Package paczka9;
+    Package paczka10;
+    std::cout << "Some created" << std::endl;
+
+    std::cout << paczka6.get_id() << '\t';
+    std::cout << paczka7.get_id() << '\t';
+    std::cout << paczka8.get_id() << '\t';
+    std::cout << paczka9.get_id() << '\t';
+    std::cout << paczka10.get_id() << '\t';
+
+    std::cout <<'\n'<< "Goodbye, World!" << std::endl;
     return 0;
 }
