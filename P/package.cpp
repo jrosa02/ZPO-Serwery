@@ -13,7 +13,7 @@ Package::Package() {
         assigned_IDs_.push_back(*p2newID);
         freed_IDs_.erase(p2newID);
     }else{
-        ElementID newID = (*std::max_element(freed_IDs_.begin(), freed_IDs_.end())) + 1;
+        ElementID newID = (*std::max_element(assigned_IDs_.begin(), assigned_IDs_.end())) + 1;
         elementId_ = newID;
         assigned_IDs_.push_back(newID);
     }

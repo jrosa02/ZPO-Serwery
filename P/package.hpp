@@ -13,10 +13,10 @@
 class Package {
 public:
     Package();
-    Package(ElementID id2assign);
-    Package(Package&& apackage): elementId_(apackage.get_ID()) {};
-    Package& operator=(Package&& other) = default;
-    ElementID get_ID() const {return elementId_;};
+    explicit Package(ElementID id2assign);
+    Package(Package&& apackage) noexcept: elementId_(apackage.get_id()) {};
+    Package& operator=(Package&& other) noexcept {return *this;};
+    ElementID get_id() const {return elementId_;};
     ~Package();
 
 private:
