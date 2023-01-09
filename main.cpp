@@ -46,13 +46,21 @@ int main() {
     Package paczka8;
     Package paczka9;
     Package paczka10;
-    std::cout << "Some created" << std::endl;
-
     std::cout << paczka6.get_id() << '\t';
     std::cout << paczka7.get_id() << '\t';
     std::cout << paczka8.get_id() << '\t';
     std::cout << paczka9.get_id() << '\t';
     std::cout << paczka10.get_id() << '\t';
+    std::cout << "Default created" << std::endl;
+
+
+    Package paczka11(6);
+    Package paczka12(305);
+    Package paczka13(305);
+    std::cout << paczka11.get_id() << '\t';
+    std::cout << paczka12.get_id() << '\t';
+    std::cout << paczka13.get_id() << '\t';
+    std::cout << "Specific created" << std::endl;
 
     std::cout <<'\n'<< "Goodbye, World!" << std::endl;
     return 0;
