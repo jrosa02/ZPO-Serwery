@@ -19,6 +19,7 @@ void PackageQueue::push(Package&& apackage){
 
 
 Package PackageQueue::pop(){
+    //FIXME Nie działało teraz jakoć coś robi
     ElementID newID = storageplace_.begin()->get_ID();
     storageplace_.pop_front();
     return Package(newID);

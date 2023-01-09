@@ -9,15 +9,14 @@ void P_test(){
         packageQueue.push(Package());
     }
 
-    Package psize;
-    std::cout<<std::endl;
-    for (int i = 0; i < siz; ++i){
+    Package idk;
+    std::cout<<packageQueue.size()<<std::endl;
+    for (int j = 0; j < siz; j++){
         std::cout<<'.';
-        Package p;
-        p = Package(packageQueue.pop()); //FIXME nie działa i nie wiem czy ma działać
+        idk = std::move(packageQueue.pop()); //FIXME nie działa i nie wiem czy ma działać
         std::cout<<',';
-        std::cout<<p.get_ID();
-        std::cout<<';';
+        std::cout<<idk.get_ID();
+        std::cout<<';'<<std::endl;
     }
 }
 
