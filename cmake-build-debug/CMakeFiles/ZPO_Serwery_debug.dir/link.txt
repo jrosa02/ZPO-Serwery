@@ -1,0 +1,3 @@
+"D:\Program Files\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ZPO_Serwery_debug.dir/objects.a
+"D:\Program Files\CLion 2021.3.3\bin\mingw\bin\ar.exe" qc CMakeFiles\ZPO_Serwery_debug.dir/objects.a @CMakeFiles\ZPO_Serwery_debug.dir\objects1.rsp
+"D:\Program Files\CLion 2021.3.3\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\ZPO_Serwery_debug.dir/objects.a -Wl,--no-whole-archive -o ZPO_Serwery_debug.exe -Wl,--out-implib,libZPO_Serwery_debug.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ZPO_Serwery_debug.dir\linklibs.rsp

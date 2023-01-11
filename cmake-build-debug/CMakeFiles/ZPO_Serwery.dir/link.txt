@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ZPO_Serwery.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\ZPO_Serwery.dir/objects.a @CMakeFiles\ZPO_Serwery.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\ZPO_Serwery.dir/objects.a -Wl,--no-whole-archive -o ZPO_Serwery.exe -Wl,--out-implib,libZPO_Serwery.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ZPO_Serwery.dir\linklibs.rsp
