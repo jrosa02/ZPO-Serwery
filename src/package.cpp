@@ -3,7 +3,6 @@
 //
 
 #include <algorithm>
-#include <iostream>
 #include "package.hpp"
 
 
@@ -17,8 +16,8 @@ Package::Package() {
         ElementID newID = (*std::max_element(assigned_IDs_.begin(), assigned_IDs_.end())) + 1;
         elementId_ = newID;
         assigned_IDs_.insert(newID);
-    };
-};
+    }
+}
 
 
 Package::Package(ElementID id2assign) {
@@ -31,10 +30,10 @@ Package::Package(ElementID id2assign) {
         elementId_ = newID;
         assigned_IDs_.insert(newID);
     }
-};
+}
 
 Package::~Package() {
-    auto p2IDfreed = std::find(assigned_IDs_.begin(), assigned_IDs_.end(), elementId_);
+    //auto p2IDfreed = std::find(assigned_IDs_.begin(), assigned_IDs_.end(), elementId_);
     //if (p2IDfreed == assigned_IDs_.end())
     //FIXME jak coś się zepsuje to wyrzuci
     //throw std::exception();
@@ -46,5 +45,5 @@ Package::~Package() {
 Package& Package::operator=(Package&& other) noexcept {
     elementId_ = other.elementId_;
     return *this;
-};
+}
 

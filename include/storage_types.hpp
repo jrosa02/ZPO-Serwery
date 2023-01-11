@@ -46,7 +46,7 @@ public:
 
 class PackageQueue : public IPackageQueue {
 public:
-    PackageQueue(PackageQueueType queueType) : queueType_(queueType), IPackageQueue() {};
+    explicit PackageQueue(PackageQueueType queueType) : IPackageQueue(), queueType_(queueType) {};
 
     void push(Package&& apackage) override;
 
@@ -58,13 +58,13 @@ public:
 
     std::list<Package>::const_iterator cend() const override { return storageplace_.cend(); };
 
-    std::list<Package>::const_iterator begin() const { return storageplace_.begin(); };
+    std::list<Package>::const_iterator begin() const override { return storageplace_.begin(); };
 
-    std::list<Package>::const_iterator end() const { return storageplace_.end(); };
+    std::list<Package>::const_iterator end() const override { return storageplace_.end(); };
 
-    Package pop();
+    Package pop() override;
 
-    PackageQueueType get_queue_type() const { return queueType_; };
+    PackageQueueType get_queue_type() const override { return queueType_; };
 
 
 private:
