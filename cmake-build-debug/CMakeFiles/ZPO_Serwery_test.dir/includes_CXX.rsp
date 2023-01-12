@@ -1,1 +1,0 @@
--IC:/git/ZPO-Serwery/include -IC:/git/ZPO-Serwery/mocks -isystem C:/git/ZPO-Serwery/googletest-master/googlemock/include -isystem C:/git/ZPO-Serwery/googletest-master/googletest/include -isystem C:/git/ZPO-Serwery/googletest-master/googlemock -isystem C:/git/ZPO-Serwery/googletest-master/googletest

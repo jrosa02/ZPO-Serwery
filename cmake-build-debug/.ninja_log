@@ -1,0 +1,15 @@
+# ninja log v5
+1	845	6952283719117095	CMakeFiles/ZPO_Serwery_test.dir/src/storage_types.cpp.obj	24a6c9d1b6ac482e
+17	1131	6952283721985327	CMakeFiles/ZPO_Serwery_test.dir/src/package.cpp.obj	30f1c900c7358c2c
+11	2751	6952283738195262	CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj	883044ab27fb97bd
+23	2817	6952283738860236	CMakeFiles/ZPO_Serwery_test.dir/test/test_storage_types.cpp.obj	348fc6247aea9d0b
+33	2897	6952283739692353	CMakeFiles/ZPO_Serwery_test.dir/test/main_gtest.cpp.obj	c0d1f9691d1bb380
+40	4638	6952283757034963	googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	11a9705a6cbbb388
+47	9972	6952283810257568	googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	c24d9802211cc9bb
+9976	12607	6952283836809677	lib/libgtest.a	835760c3f20c1d19
+12608	12916	6952283839892236	lib/libgmock.a	b33ab1fbaedbf775
+12917	16152	6952283872147792	ZPO_Serwery_test.exe	b5c12420ec13b595
+7	2203	6952286252693455	CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj	883044ab27fb97bd
+2204	6457	6952286295152658	ZPO_Serwery_test.exe	b5c12420ec13b595
+10	2148	6952287757261794	CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj	883044ab27fb97bd
+2149	6314	6952287798836151	ZPO_Serwery_test.exe	b5c12420ec13b595
