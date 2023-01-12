@@ -35,3 +35,4 @@
 *.cmake
 *.json
 *.bin
+*.log
