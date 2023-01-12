@@ -30,7 +30,7 @@ add_executable(ZPO_Serwery_debug ${SOURCE_FILES} main.cpp)
 set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
-        include/nodes.hpp include/config.hpp include/helpers.hpp include/factory.hpp)
+        include/nodes.hpp include/config.hpp include/factory.hpp)
 
 # Dodaj konfigurację typu `Test`.
 add_executable(ZPO_Serwery_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)

@@ -8,5 +8,5 @@
 using ElementID = unsigned int;
 using Time = unsigned int;
 using TimeOffset = int;
-using ProbabilityGenerator = double;
+using ProbabilityGenerator = std::function<float(void)>;
 #endif //ZPO_SERWERY_TYPES_HPP

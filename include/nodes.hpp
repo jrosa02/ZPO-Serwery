@@ -39,7 +39,8 @@ public:
     preferences_t& get_preferences() ;
 
 private:
-    preferences_t preferences;
+    const ProbabilityGenerator pg;
+    preferences_t preferences_;
 };
 
 class PackageSender{
@@ -65,5 +66,7 @@ public:
     void do_work(Time t);
     TimeOffset get_processing_duration() const;
     Time get_package_processing_start_time() const;
+private:
+
 };
 #endif //ZPO_SERWERY_NODES_HPP
