@@ -63,15 +63,19 @@ private:
 
 class PackageSender{
 public:
-    PackageSender() = default; //FIXME nie wiem czy ten konstruktor jest legalny
     PackageSender(PackageSender&& ps) = default; //Ma być default;
+
     void send_package();
+
     [[nodiscard]] std::optional<Package>& get_sending_buffer() {return buffer_;};
+
 protected:
     void push_package(Package&& aPackage);
+
 private:
     std::optional<Package> buffer_;
 
+    ReceiverPreferences receiver_preferences_;
 };
 
 
