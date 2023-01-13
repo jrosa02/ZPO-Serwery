@@ -7,19 +7,22 @@
 //Storehouse
 
 //Receiver Prefferences
+void actuPref(preferences_t preferences){
+    double P_sum = std::accumulate(preferences.begin(), preferences.end(), 0,
+                                   [](double sum, auto other) { return sum + std::get<1>(other); });
 
-//void ReceiverPreferences::add_receiver(IPackageReceiver *r) {
-//    double _random = pg_();
-//    preferences_.insert(std::pair(r, _random));
-//    double P_sum = std::accumulate(preferences_.begin(), preferences_.end(), 0,
-//                                   [](double sum, auto other) { return sum + std::get<1>(other); });
-//
-//    auto _first = preferences_.begin();
-//    auto _last = preferences_.end();
-//    //for (; _first != _last; ++_first) //FIXME kurwa nie wiem
-//        //*_first = std::move(std::pair(std::get<0>(*_first),std::get<1>(*_first)/P_sum));
-//
-//}
+    auto _first = preferences.begin();
+    auto _last = preferences.end();
+    for (; _first != _last; ++_first) //FIXME kurwa nie wiem
+        *_first = std::move(std::pair(std::get<0>(*_first),std::get<1>(*_first)/P_sum));
+
+}
+
+void ReceiverPreferences::add_receiver(IPackageReceiver *r) {
+    double _random = pg_();
+    preferences_.insert(std::pair(r, _random));
+
+}
 
 void ReceiverPreferences::remove_receiver(IPackageReceiver *r) {
     preferences_.erase(r);

@@ -16,3 +16,10 @@
 23	5187	6953275168952602	CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj	883044ab27fb97bd
 61	9091	6953275207650344	CMakeFiles/ZPO_Serwery_test.dir/test/test_nodes.cpp.obj	2807feded6b21a98
 15	1971	6953277239370498	CMakeFiles/ZPO_Serwery_test.dir/src/nodes.cpp.obj	e6165ff3040a6ed
+32	1227	6953321236318011	CMakeFiles/ZPO_Serwery_test.dir/src/storage_types.cpp.obj	24a6c9d1b6ac482e
+9	1232	6953321236398018	CMakeFiles/ZPO_Serwery_test.dir/src/package.cpp.obj	30f1c900c7358c2c
+75	1579	6953321239866454	CMakeFiles/ZPO_Serwery_test.dir/src/helpers.cpp.obj	e80f02fea4fd4c85
+56	2109	6953321245189482	CMakeFiles/ZPO_Serwery_test.dir/src/nodes.cpp.obj	e6165ff3040a6ed
+25	2963	6953321253712444	CMakeFiles/ZPO_Serwery_test.dir/test/test_storage_types.cpp.obj	348fc6247aea9d0b
+39	2976	6953321253850973	CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj	883044ab27fb97bd
+47	5528	6953321279273822	CMakeFiles/ZPO_Serwery_test.dir/test/test_nodes.cpp.obj	2807feded6b21a98
