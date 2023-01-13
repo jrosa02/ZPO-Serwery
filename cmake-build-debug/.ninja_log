@@ -9,3 +9,10 @@
 40	4638	6952283757034963	googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	11a9705a6cbbb388
 12608	12916	6952283839892236	lib/libgmock.a	b33ab1fbaedbf775
 2149	6314	6952287798836151	ZPO_Serwery_test.exe	b5c12420ec13b595
+14	1834	6953275135377651	CMakeFiles/ZPO_Serwery_test.dir/src/package.cpp.obj	30f1c900c7358c2c
+32	1845	6953275135439409	CMakeFiles/ZPO_Serwery_test.dir/src/storage_types.cpp.obj	24a6c9d1b6ac482e
+77	3033	6953275143468551	CMakeFiles/ZPO_Serwery_test.dir/src/helpers.cpp.obj	e80f02fea4fd4c85
+42	5075	6953275167825951	CMakeFiles/ZPO_Serwery_test.dir/test/test_storage_types.cpp.obj	348fc6247aea9d0b
+23	5187	6953275168952602	CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj	883044ab27fb97bd
+61	9091	6953275207650344	CMakeFiles/ZPO_Serwery_test.dir/test/test_nodes.cpp.obj	2807feded6b21a98
+15	1971	6953277239370498	CMakeFiles/ZPO_Serwery_test.dir/src/nodes.cpp.obj	e6165ff3040a6ed

@@ -18,6 +18,8 @@ enum PackageQueueType {
 
 class IPackageStockpile {
 public:
+    using const_iterator = std::list<Package>::const_iterator;
+
     virtual void push(Package&& apackage) = 0;
 
     virtual bool empty() const = 0;
