@@ -17,6 +17,7 @@ include_directories(
 set(SOURCE_FILES
         src/package.cpp
         src/storage_types.cpp
+        src/storage_types.cpp
         )
 
 # Dodaj konfigurację typu `Debug`.
@@ -30,7 +31,9 @@ add_executable(ZPO_Serwery_debug ${SOURCE_FILES} main.cpp)
 set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
-        include/nodes.hpp include/config.hpp include/factory.hpp src/helpers.cpp include/helpers.hpp src/nodes.cpp test/test_nodes.cpp)
+        test/test_nodes.cpp
+        test/test_Factory.cpp
+        include/nodes.hpp include/config.hpp include/factory.hpp src/helpers.cpp include/helpers.hpp src/nodes.cpp test/test_nodes.cpp src/factory.hpp.cpp)
 
 # Dodaj konfigurację typu `Test`.
 add_executable(ZPO_Serwery_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)

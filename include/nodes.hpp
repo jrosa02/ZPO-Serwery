@@ -12,8 +12,9 @@
 #include "storage_types.hpp"
 #include "helpers.hpp"
 
-enum RecieverType{
-
+enum ReceiverType{
+    WORKER,
+    STOREHOUSE
 };
 
 
@@ -22,6 +23,8 @@ public:
     virtual void receive_package(Package&& aPackage) = 0;
 
     [[nodiscard]] virtual ElementID get_id() const = 0;
+
+    [[nodiscard]] virtual ReceiverType get_receiver_type() const = 0;
 
     virtual ~IPackageReceiver() = default;
 };
@@ -37,6 +40,8 @@ public:
 
     void receive_package(Package&& aPackage) override {up2iPackageStockpile->push(std::move(aPackage));};
 
+    [[nodiscard]] ReceiverType get_receiver_type() const override {return STOREHOUSE;};
+
 private:
     ElementID id_;
     std::unique_ptr<IPackageStockpile> up2iPackageStockpile;
@@ -49,7 +54,7 @@ using const_iterator = preferences_t::const_iterator;
 
 class ReceiverPreferences{
 public:
-    explicit ReceiverPreferences(ProbabilityGenerator pg = default_probability_generator): pg_(pg) {};
+    explicit ReceiverPreferences(ProbabilityGenerator pg = probability_generator): pg_(pg) {};
 
     void add_receiver(IPackageReceiver* r);
 
@@ -81,8 +86,7 @@ public:
 
     void send_package();
 
-    [[nodiscard]] std::optional<Package>& get_sending_buffer()
-    {return sender_buffer_;};
+    [[nodiscard]] std::optional<Package>& get_sending_buffer() {return sender_buffer_;};
 
     ReceiverPreferences receiver_preferences_;
 
@@ -124,6 +128,8 @@ public:
     [[nodiscard]] ElementID get_id() const override {return id_;};
 
     void receive_package(Package&& p) override {up2PackQueue_->push(std::move(p));};
+
+    [[nodiscard]] ReceiverType get_receiver_type() const override {return WORKER;};
 
 private:
     ElementID id_;

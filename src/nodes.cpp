@@ -7,57 +7,57 @@
 //Storehouse
 
 //Receiver Prefferences
-void actuPref(preferences_t preferences){
-    double P_sum = std::accumulate(preferences.begin(), preferences.end(), 0,
-                                   [](double sum, auto other) { return sum + std::get<1>(other); });
 
-    auto _first = preferences.begin();
-    auto _last = preferences.end();
-    for (; _first != _last; ++_first) //FIXME kurwa nie wiem
-        *_first = std::move(std::pair(std::get<0>(*_first),std::get<1>(*_first)/P_sum));
-
-}
 
 void ReceiverPreferences::add_receiver(IPackageReceiver *r) {
     double _random = pg_();
     preferences_.insert(std::pair(r, _random));
-
+    double P_sum = std::accumulate(preferences_.begin(), preferences_.end(), 0.0, [](double sum, std::pair<IPackageReceiver*, double> other) { return sum + std::get<double>(other); });
+    for(auto [rec, prob]: preferences_){
+        preferences_[rec] = prob/P_sum;
+    }
 }
 
 void ReceiverPreferences::remove_receiver(IPackageReceiver *r) {
     preferences_.erase(r);
+    double P_sum = std::accumulate(preferences_.begin(), preferences_.end(), 0.0, [](double sum, std::pair<IPackageReceiver*, double> other) { return sum + std::get<double>(other); });
+    for(auto [rec, prob]: preferences_){
+        preferences_[rec] = prob/P_sum;
+    }
 }
 
 IPackageReceiver* ReceiverPreferences::choose_receiver() const {
-    double _random = pg_();
-    auto _first = preferences_.begin();
-    auto _last = preferences_.end();
-    for (; _first != _last; ++_first) {
-        _random -= std::get<1>(*_first);
-        if (_random <= 0)
-            return std::get<0>(*_first);
-    }
-    return std::get<0>(*_last);
+    double prob = pg_();
+    for(auto[rec, p]: preferences_){
+        prob -= p;
+        if(prob <= 0)
+            return rec;
+    };
+    return nullptr;
 }
 
 //PackageSender
-
-void PackageSender::send_package() {};
+void PackageSender::send_package() {
+    if(sender_buffer_){
+        receiver_preferences_.choose_receiver()->receive_package(std::move(sender_buffer_.value()));
+        sender_buffer_.reset();
+    }
+};
 
 void PackageSender::push_package(Package &&aPackage) {
-    sender_buffer_ = std::move(aPackage);
+    if (!sender_buffer_.has_value())
+        sender_buffer_ = std::move(aPackage);
 }
 
 //Ramp
 void Ramp::deliver_goods(Time t) {
-    if(t % deliverycooldown_ == 0)
+    if(t % deliverycooldown_ == 1)
         push_package(Package());
 }
 
 //Worker
-
 void Worker::do_work(Time t) {
-    if(!up2PackQueue_->empty() && workingBuffer_.has_value()){
+    if(!up2PackQueue_->empty() && !workingBuffer_.has_value()){
         workingBuffer_ = up2PackQueue_->pop();
         procStartTime_ = t;
     }
