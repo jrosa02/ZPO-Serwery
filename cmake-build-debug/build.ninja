@@ -139,6 +139,13 @@ build CMakeFiles/ZPO_Serwery_test.dir/src/nodes.cpp.obj: CXX_COMPILER__ZPO_Serwe
   OBJECT_DIR = CMakeFiles\ZPO_Serwery_test.dir
   OBJECT_FILE_DIR = CMakeFiles\ZPO_Serwery_test.dir\src
 
+build CMakeFiles/ZPO_Serwery_test.dir/test/test_nodes.cpp.obj: CXX_COMPILER__ZPO_Serwery_test_Debug C$:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/test/test_nodes.cpp || cmake_object_order_depends_target_ZPO_Serwery_test
+  DEP_FILE = CMakeFiles\ZPO_Serwery_test.dir\test\test_nodes.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -IC:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/include -IC:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/mocks -isystem C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/googletest-master/googlemock/include -isystem C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/googletest-master/googletest/include -isystem C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/googletest-master/googlemock -isystem C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\ZPO_Serwery_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\ZPO_Serwery_test.dir\test
+
 build CMakeFiles/ZPO_Serwery_test.dir/test/main_gtest.cpp.obj: CXX_COMPILER__ZPO_Serwery_test_Debug C$:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/test/main_gtest.cpp || cmake_object_order_depends_target_ZPO_Serwery_test
   DEP_FILE = CMakeFiles\ZPO_Serwery_test.dir\test\main_gtest.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=gnu++17
@@ -154,7 +161,7 @@ build CMakeFiles/ZPO_Serwery_test.dir/test/main_gtest.cpp.obj: CXX_COMPILER__ZPO
 #############################################
 # Link the executable ZPO_Serwery_test.exe
 
-build ZPO_Serwery_test.exe: CXX_EXECUTABLE_LINKER__ZPO_Serwery_test_Debug CMakeFiles/ZPO_Serwery_test.dir/src/package.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/src/storage_types.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/test_storage_types.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/src/helpers.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/src/nodes.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/main_gtest.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
+build ZPO_Serwery_test.exe: CXX_EXECUTABLE_LINKER__ZPO_Serwery_test_Debug CMakeFiles/ZPO_Serwery_test.dir/src/package.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/src/storage_types.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/test_package.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/test_storage_types.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/src/helpers.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/src/nodes.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/test_nodes.cpp.obj CMakeFiles/ZPO_Serwery_test.dir/test/main_gtest.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ZPO_Serwery_test.dir

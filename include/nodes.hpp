@@ -10,13 +10,14 @@
 #include <optional>
 #include "types.hpp"
 #include "storage_types.hpp"
+#include "helpers.hpp"
 
 enum RecieverType{
 
 };
 
 
-class IPackageReceiver: public IPackageStockpile{
+class IPackageReceiver{
 public:
     virtual void receive_package(Package&& p) = 0;
 
@@ -45,7 +46,7 @@ using const_iterator = preferences_t::const_iterator;
 
 class ReceiverPreferences{
 public:
-    explicit ReceiverPreferences(ProbabilityGenerator pg): pg_(pg) {};
+    explicit ReceiverPreferences(ProbabilityGenerator pg = default_probability_generator): pg_(pg) {};
 
     void add_receiver(IPackageReceiver* r);
 
@@ -63,23 +64,25 @@ private:
 
 class PackageSender{
 public:
+    PackageSender() = default; //FIXME nie wiem czy to legalne
+
     PackageSender(PackageSender&& ps) = default; //Ma być default;
 
     void send_package();
 
-    [[nodiscard]] std::optional<Package>& get_sending_buffer() {return buffer_;};
+    [[nodiscard]] std::optional<Package>& get_sending_buffer() {return sender_buffer_;};
 
 protected:
     void push_package(Package&& aPackage);
 
 private:
-    std::optional<Package> buffer_;
+    std::optional<Package> sender_buffer_;
 
     ReceiverPreferences receiver_preferences_;
 };
 
 
-class Ramp: PackageSender{
+class Ramp: public PackageSender{
 public:
     Ramp(ElementID id, TimeOffset di): PackageSender(), id_(id), timeoffset_(di) {};
 
@@ -94,7 +97,7 @@ private:
     Package buffer_;
 };
 
-class Worker: public IPackageReceiver{
+class Worker: public IPackageReceiver, public PackageSender{
 public:
     Worker(ElementID id, TimeOffset pd, std::unique_ptr<IPackageQueue> q): id_(id), processing_duration_(pd), up2PackQueue_(std::move(q)) {};
 
@@ -103,6 +106,11 @@ public:
     [[nodiscard]] TimeOffset get_processing_duration() const {return processing_duration_;};
 
     [[nodiscard]] Time get_package_processing_start_time() const {return procStartTime_;};
+
+    //IPackageReceiver
+    [[nodiscard]] ElementID get_id() const override {return id_;};
+
+    void receive_package(Package&& p) override {up2PackQueue_->push(std::move(p));};
 
 private:
     ElementID id_;

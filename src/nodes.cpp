@@ -41,7 +41,7 @@ IPackageReceiver* ReceiverPreferences::choose_receiver() const {
 void PackageSender::send_package() {};
 
 void PackageSender::push_package(Package &&aPackage) {
-    buffer_ = std::move(aPackage);
+    sender_buffer_ = std::move(aPackage);
 }
 
 //Ramp
