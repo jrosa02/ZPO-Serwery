@@ -105,5 +105,6 @@ private:
     TimeOffset processing_duration_;
     std::unique_ptr<IPackageQueue> up2PackQueue_;
     Time procStartTime_; //TODO
+    Package workingBuffer_
 };
 #endif //ZPO_SERWERY_NODES_HPP
