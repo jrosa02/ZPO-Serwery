@@ -262,29 +262,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_debug.dir\build.make CMakeFiles/ZPO_Serwery_debug.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/factory.hpp.obj: src/factory.hpp.cpp.obj
-.PHONY : src/factory.hpp.obj
+src/factory.obj: src/factory.cpp.obj
+.PHONY : src/factory.obj
 
 # target to build an object file
-src/factory.hpp.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/src/factory.hpp.cpp.obj
-.PHONY : src/factory.hpp.cpp.obj
+src/factory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/src/factory.cpp.obj
+.PHONY : src/factory.cpp.obj
 
-src/factory.hpp.i: src/factory.hpp.cpp.i
-.PHONY : src/factory.hpp.i
+src/factory.i: src/factory.cpp.i
+.PHONY : src/factory.i
 
 # target to preprocess a source file
-src/factory.hpp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/src/factory.hpp.cpp.i
-.PHONY : src/factory.hpp.cpp.i
+src/factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/src/factory.cpp.i
+.PHONY : src/factory.cpp.i
 
-src/factory.hpp.s: src/factory.hpp.cpp.s
-.PHONY : src/factory.hpp.s
+src/factory.s: src/factory.cpp.s
+.PHONY : src/factory.s
 
 # target to generate assembly for a file
-src/factory.hpp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/src/factory.hpp.cpp.s
-.PHONY : src/factory.hpp.cpp.s
+src/factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/src/factory.cpp.s
+.PHONY : src/factory.cpp.s
 
 src/helpers.obj: src/helpers.cpp.obj
 .PHONY : src/helpers.obj
@@ -529,9 +529,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/factory.hpp.obj
-	@echo ... src/factory.hpp.i
-	@echo ... src/factory.hpp.s
+	@echo ... src/factory.obj
+	@echo ... src/factory.i
+	@echo ... src/factory.s
 	@echo ... src/helpers.obj
 	@echo ... src/helpers.i
 	@echo ... src/helpers.s

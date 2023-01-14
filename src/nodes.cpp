@@ -11,7 +11,7 @@
 
 void ReceiverPreferences::add_receiver(IPackageReceiver *r) {
     double _random = pg_();
-    preferences_.insert(std::pair(r, _random));
+    preferences_.emplace(std::pair(r, _random));
     double P_sum = std::accumulate(preferences_.begin(), preferences_.end(), 0.0, [](double sum, std::pair<IPackageReceiver*, double> other) { return sum + std::get<double>(other); });
     for(auto [rec, prob]: preferences_){
         preferences_[rec] = prob/P_sum;

@@ -24,9 +24,9 @@ public:
 
     [[nodiscard]] virtual ElementID get_id() const = 0;
 
-    [[nodiscard]] virtual ReceiverType get_receiver_type() const = 0;
-
     virtual ~IPackageReceiver() = default;
+
+    //[[nodiscard]] ReceiverType get_receiver_type() const;
 };
 
 
@@ -40,7 +40,7 @@ public:
 
     void receive_package(Package&& aPackage) override {up2iPackageStockpile->push(std::move(aPackage));};
 
-    [[nodiscard]] ReceiverType get_receiver_type() const override {return STOREHOUSE;};
+    [[nodiscard]] static ReceiverType get_receiver_type() {return STOREHOUSE;};
 
 private:
     ElementID id_;
@@ -129,7 +129,7 @@ public:
 
     void receive_package(Package&& p) override {up2PackQueue_->push(std::move(p));};
 
-    [[nodiscard]] ReceiverType get_receiver_type() const override {return WORKER;};
+    [[nodiscard]] static ReceiverType get_receiver_type() {return WORKER;};
 
 private:
     ElementID id_;

@@ -78,13 +78,14 @@ public:
     [[nodiscard]] NodeCollection<Storehouse>::const_iterator storehouse_cend() const {return storehouseCol_.cend();};
 
     //Factory
-    bool is_consistent(void) const {return 1;}; // FIXME
+    bool is_ramp_consistent(Ramp* ramp) const;
+    bool is_consistent() const; // FIXME
 
-    void do_deliveries(Time);
+    void do_deliveries(Time t);
 
     void do_package_passing();
 
-    void do_work(Time);
+    void do_work(Time t);
 
 private:
     void remove_receiver(NodeCollection<IPackageReceiver>& collection, ElementID id);

@@ -415,7 +415,7 @@
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/main.cpp">
 			<Option target="ZPO_Serwery_debug"/>
 		</Unit>
-		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/src/factory.hpp.cpp">
+		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/src/factory.cpp">
 			<Option target="ZPO_Serwery_test"/>
 		</Unit>
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/src/helpers.cpp">
