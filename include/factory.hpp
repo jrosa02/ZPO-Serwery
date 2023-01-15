@@ -78,7 +78,7 @@ public:
     [[nodiscard]] NodeCollection<Storehouse>::const_iterator storehouse_cend() const {return storehouseCol_.cend();};
 
     //Factory
-    bool is_ramp_consistent(Ramp* ramp) const;
+    static bool is_ramp_consistent(Ramp* pRamp) ;
     bool is_consistent() const; // FIXME
 
     void do_deliveries(Time t);

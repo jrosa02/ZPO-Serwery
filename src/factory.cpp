@@ -3,9 +3,9 @@
 //
 #include "factory.hpp"
 
-bool Factory::is_ramp_consistent(Ramp* ramp) const {
-    
-    return 1; //FIXME
+bool Factory::is_ramp_consistent(Ramp* pRamp) {
+    auto a = pRamp->get_id();
+    return a>0; //FIXME
 }
 
 bool Factory::is_consistent() const {

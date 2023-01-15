@@ -32,7 +32,6 @@ set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
         test/test_nodes.cpp
-        test/test_Factory.cpp
         include/nodes.hpp include/config.hpp include/factory.hpp src/helpers.cpp include/helpers.hpp src/nodes.cpp test/test_nodes.cpp src/factory.cpp)
 
 # Dodaj konfigurację typu `Test`.
