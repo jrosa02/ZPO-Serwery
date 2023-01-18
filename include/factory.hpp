@@ -22,28 +22,32 @@ public:
 
     using const_iterator = typename container_t::const_iterator;
 
-    void add(Node&& aNode) { container_.push_back(std::move(aNode)); };
+    void add(Node&& aNode) { container_.push_back(std::move(aNode)); }
 
     iterator find_by_id(ElementID id) {
         return std::find_if(container_.begin(), container_.end(),
                             [&id](const auto& elem) { return elem.get_id() == id; });
-    };
+    }
 
     [[nodiscard]] const_iterator find_by_id(ElementID id) const {
         return std::find_if(container_.begin(), container_.end(), [&id](const auto& elem) {
             return elem.get_id() == id;
         });
-    };
+    }
 
-    void remove_by_id(ElementID id) { container_.erase(find_by_id(id)); };
+    void remove_by_id(ElementID id) { container_.erase(find_by_id(id)); }
 
-    [[nodiscard]] const_iterator cbegin() const { return container_.cbegin(); };
+    [[nodiscard]] const_iterator cbegin() const { return container_.cbegin(); }
 
-    [[nodiscard]] const_iterator cend() const { return container_.cend(); };
+    [[nodiscard]] const_iterator cend() const { return container_.cend(); }
 
-    const_iterator begin() const { return container_.begin(); };
+    const_iterator begin() const { return container_.begin(); }
 
-    const_iterator end() const { return container_.end(); };
+    const_iterator end() const { return container_.end(); }
+
+    iterator begin() { return container_.begin(); }
+
+    iterator end() { return container_.end(); }
 
 private:
     container_t container_;
@@ -52,49 +56,49 @@ private:
 class Factory {
 public:
     //RAMP
-    void add_ramp(Ramp&& aramp) { rampCol_.add(std::move(aramp)); };
+    void add_ramp(Ramp&& aramp) { rampCol_.add(std::move(aramp)); }
 
-    NodeCollection<Ramp>::iterator find_ramp_by_id(ElementID id) { return rampCol_.find_by_id(id); };
+    NodeCollection<Ramp>::iterator find_ramp_by_id(ElementID id) { return rampCol_.find_by_id(id); }
 
-    void remove_ramp(ElementID id) { rampCol_.remove_by_id(id); };
+    void remove_ramp(ElementID id) { rampCol_.remove_by_id(id); }
 
     [[nodiscard]] NodeCollection<Ramp>::const_iterator find_ramp_by_id(ElementID id) const {
         return rampCol_.find_by_id(id);
     };
 
-    [[nodiscard]] NodeCollection<Ramp>::const_iterator ramp_cbegin() const { return rampCol_.cbegin(); };
+    [[nodiscard]] NodeCollection<Ramp>::const_iterator ramp_cbegin() const { return rampCol_.cbegin(); }
 
-    [[nodiscard]] NodeCollection<Ramp>::const_iterator ramp_cend() const { return rampCol_.cend(); };
+    [[nodiscard]] NodeCollection<Ramp>::const_iterator ramp_cend() const { return rampCol_.cend(); }
 
     //WORKER
-    void add_worker(Worker&& aworker) { workerCol_.add(std::move(aworker)); };
+    void add_worker(Worker&& aworker) { workerCol_.add(std::move(aworker)); }
 
-    NodeCollection<Worker>::iterator find_worker_by_id(ElementID id) { return workerCol_.find_by_id(id); };
+    NodeCollection<Worker>::iterator find_worker_by_id(ElementID id) { return workerCol_.find_by_id(id); }
 
-    void remove_worker(ElementID id) { workerCol_.remove_by_id(id); };
+    void remove_worker(ElementID id) { workerCol_.remove_by_id(id); }
 
     [[nodiscard]] NodeCollection<Worker>::const_iterator
-    find_worker_by_id(ElementID id) const { return workerCol_.find_by_id(id); };
+    find_worker_by_id(ElementID id) const { return workerCol_.find_by_id(id); }
 
-    [[nodiscard]] NodeCollection<Worker>::const_iterator worker_cbegin() const { return workerCol_.cbegin(); };
+    [[nodiscard]] NodeCollection<Worker>::const_iterator worker_cbegin() const { return workerCol_.cbegin(); }
 
-    [[nodiscard]] NodeCollection<Worker>::const_iterator worker_cend() const { return workerCol_.cend(); };
+    [[nodiscard]] NodeCollection<Worker>::const_iterator worker_cend() const { return workerCol_.cend(); }
 
     //STOREHOUSE
 
-    void add_storehouse(Storehouse&& astorehouse) { storehouseCol_.add(std::move(astorehouse)); };
+    void add_storehouse(Storehouse&& astorehouse) { storehouseCol_.add(std::move(astorehouse)); }
 
-    NodeCollection<Storehouse>::iterator find_storehouse_by_id(ElementID id) { return storehouseCol_.find_by_id(id); };
+    NodeCollection<Storehouse>::iterator find_storehouse_by_id(ElementID id) { return storehouseCol_.find_by_id(id); }
 
-    void remove_storehouse(ElementID id) { storehouseCol_.remove_by_id(id); };
-
-    [[nodiscard]] NodeCollection<Storehouse>::const_iterator
-    find_storehouse_by_id(ElementID id) const { return storehouseCol_.find_by_id(id); };
+    void remove_storehouse(ElementID id) { storehouseCol_.remove_by_id(id); }
 
     [[nodiscard]] NodeCollection<Storehouse>::const_iterator
-    storehouse_cbegin() const { return storehouseCol_.cbegin(); };
+    find_storehouse_by_id(ElementID id) const { return storehouseCol_.find_by_id(id); }
 
-    [[nodiscard]] NodeCollection<Storehouse>::const_iterator storehouse_cend() const { return storehouseCol_.cend(); };
+    [[nodiscard]] NodeCollection<Storehouse>::const_iterator
+    storehouse_cbegin() const { return storehouseCol_.cbegin(); }
+
+    [[nodiscard]] NodeCollection<Storehouse>::const_iterator storehouse_cend() const { return storehouseCol_.cend(); }
 
     bool is_consistent() const;
 
