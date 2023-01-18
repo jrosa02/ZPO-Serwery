@@ -1,2 +1,2 @@
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc ..\..\lib\libgmock.a "CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ranlib.exe ..\..\lib\libgmock.a
+"D:\Program Files\CLion 2021.3.3\bin\mingw\bin\ar.exe" qc ..\..\lib\libgmock.a CMakeFiles/gmock.dir/src/gmock-all.cc.obj
+"D:\Program Files\CLion 2021.3.3\bin\mingw\bin\ranlib.exe" ..\..\lib\libgmock.a

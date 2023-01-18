@@ -74,6 +74,7 @@ TEST(ReceiverPreferencesTest, AddReceiversRescalesProbability) {
 
 TEST(ReceiverPreferencesTest, RemoveReceiversRescalesProbability) {
     // Upewnij się, że usunięcie odbiorcy spowoduje przeskalowanie pozostałych prawdopodobieństw.
+    // ReceiverPreferences rp([](){return 1;});  // Tak przechodzi
     ReceiverPreferences rp;
 
     MockReceiver r1, r2;
