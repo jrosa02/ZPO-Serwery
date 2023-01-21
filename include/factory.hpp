@@ -29,12 +29,13 @@ public:
 
     iterator find_by_id(ElementID id) {
         return std::find_if(container_.begin(), container_.end(),
-                            [&id](const auto& elem) { return elem.get_id() == id; });
+                            [&id](const auto &elem) {return elem.get_id() == id;
+        });
     }
 
     [[nodiscard]] const_iterator find_by_id(ElementID id) const {
-        return std::find_if(container_.begin(), container_.end(), [&id](const auto& elem) {
-            return elem.get_id() == id;
+        return std::find_if(container_.begin(), container_.end(),
+                            [&id](const auto& elem) {return elem.get_id() == id;
         });
     }
 
@@ -56,6 +57,7 @@ private:
     container_t container_;
 };
 
+/*FACTORY CLASS*/
 class Factory {
 public:
     //RAMP

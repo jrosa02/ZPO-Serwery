@@ -10,7 +10,7 @@
 
 
 void ReceiverPreferences::add_receiver(IPackageReceiver* ptr) {
-    
+
     auto it = std::find_if(preferences_.begin(), preferences_.end(),
                            [&ptr](auto &elem) { return elem.first == ptr; });
     if (it == preferences_.end()) {
