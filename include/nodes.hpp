@@ -11,6 +11,7 @@
 #include "types.hpp"
 #include "storage_types.hpp"
 #include "helpers.hpp"
+#include "config.hpp"
 
 enum ReceiverType {
     WORKER,
@@ -26,7 +27,9 @@ public:
 
     virtual ~IPackageReceiver() = default;
 
+#ifdef WITH_RECEIVER_TYPE
     [[nodiscard]] virtual ReceiverType get_receiver_type() const = 0;
+#endif
 };
 
 
@@ -41,7 +44,9 @@ public:
 
     void receive_package(Package&& aPackage) override { up2iPackageStockpile->push(std::move(aPackage)); };
 
-    [[nodiscard]] ReceiverType get_receiver_type() const override { return STOREHOUSE; };
+#ifdef WITH_RECEIVER_TYPE
+    [[nodiscard]] ReceiverType get_receiver_type() const override { return ReceiverType::STOREHOUSE; };
+#endif
 
 private:
     ElementID id_;
@@ -132,7 +137,9 @@ public:
 
     void receive_package(Package&& p) override { up2PackQueue_->push(std::move(p)); };
 
-    [[nodiscard]] ReceiverType get_receiver_type() const override { return WORKER; };
+#ifdef WITH_RECEIVER_TYPE
+    [[nodiscard]] ReceiverType get_receiver_type() const override { return ReceiverType::WORKER; };
+#endif
 
 private:
     ElementID id_;

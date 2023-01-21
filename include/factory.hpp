@@ -5,7 +5,11 @@
 #ifndef ZPO_SERWERY_FACTORY_HPP
 #define ZPO_SERWERY_FACTORY_HPP
 
+#include <stdexcept>
 #include "nodes.hpp"
+#include "config.hpp"
+
+#define WITH_RECEIVER_TYPE
 
 enum NodeColor {
     NOTVISITED,
