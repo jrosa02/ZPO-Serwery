@@ -6,6 +6,7 @@
 #include "gtest/gtest.h"
 
 #include "helpers.hpp"
+#include "config.hpp"
 
 // -------
 

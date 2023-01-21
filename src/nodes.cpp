@@ -9,14 +9,19 @@
 //Receiver Prefferences
 
 
-void ReceiverPreferences::add_receiver(IPackageReceiver *r) {
-    // Teraz jest tak, że dodawany odbiorca ma przypisywany losowe prawwdopodobieństwo od 0 do 0.5
-    // wydaje mi się, że testy oczekują, że będzie dostawał zawsze 0.5, albo tyle, żeby wszytskie miały po równo.
-    double _random = pg_();
-    preferences_.emplace(std::pair(r, _random));
-    double P_sum = std::accumulate(preferences_.begin(), preferences_.end(), 0.0, [](double sum, std::pair<IPackageReceiver*, double> other) { return sum + std::get<double>(other); });
-    for(auto [rec, prob]: preferences_){
-        preferences_[rec] = prob/P_sum;
+void ReceiverPreferences::add_receiver(IPackageReceiver* ptr) {
+    
+    auto it = std::find_if(preferences_.begin(), preferences_.end(),
+                           [&ptr](auto &elem) { return elem.first == ptr; });
+    if (it == preferences_.end()) {
+        if (preferences_.size() > 0) {
+            preferences_.emplace(ptr, 1/preferences_.size());
+            for (auto & elem : preferences_) {
+                elem.second = double(1)/double(preferences_.size());
+            }
+        }else {
+            preferences_.emplace(ptr, 1);
+        }
     }
 }
 
@@ -35,7 +40,7 @@ IPackageReceiver* ReceiverPreferences::choose_receiver() const {
         if(prob <= 0)
             return rec;
     };
-    return nullptr;
+    return (--preferences_.end())->first;
 }
 
 //PackageSender

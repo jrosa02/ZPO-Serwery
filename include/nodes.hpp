@@ -68,7 +68,7 @@ public:
 
     [[nodiscard]] IPackageReceiver* choose_receiver() const;
 
-    [[nodiscard]] preferences_t get_preferences() const { return preferences_; };
+    [[nodiscard]] const preferences_t & get_preferences() const { return preferences_; };
 
     //iteratory
     const_iterator begin() const { return preferences_.begin(); }
