@@ -2,7 +2,7 @@
 // Created by janro on 13.01.2023.
 //
 #include "factory.hpp"
-
+#ifdef WITH_RECEIVER_TYPE
 
 bool Factory::has_reachable_storage(const PackageSender* sender,
                                     std::map<const PackageSender*, NodeColor>& node_colors) const {
@@ -79,3 +79,5 @@ void Factory::do_work(Time t) {
     for (auto& worker: workerCol_)
         worker.do_work(t);
 }
+
+#endif

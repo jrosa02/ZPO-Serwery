@@ -4,12 +4,11 @@
 
 #ifndef ZPO_SERWERY_FACTORY_HPP
 #define ZPO_SERWERY_FACTORY_HPP
-
+#ifdef WITH_RECEIVER_TYPE
 #include <stdexcept>
 #include "nodes.hpp"
 #include "config.hpp"
 
-#define WITH_RECEIVER_TYPE
 
 enum NodeColor {
     NOTVISITED,
@@ -123,4 +122,5 @@ private:
     NodeCollection<Storehouse> storehouseCol_;
 };
 
+#endif
 #endif //ZPO_SERWERY_FACTORY_HPP

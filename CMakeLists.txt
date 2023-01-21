@@ -51,3 +51,5 @@ add_subdirectory(googletest-master)
 # Podlinkuj bibliotekę o identyfikatorze `gmock` (w pliku CMake) wyłącznie do konkretnej
 # konfiguracji (tu: `Test`).
 target_link_libraries(ZPO_Serwery_test gmock)
+
+target_compile_definitions(ZPO_Serwery_test PUBLIC EXERCISE_ID=1)
