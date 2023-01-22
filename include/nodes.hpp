@@ -28,7 +28,9 @@ public:
     virtual ~IPackageReceiver() = default;
 
 #ifdef WITH_RECEIVER_TYPE
+
     [[nodiscard]] virtual ReceiverType get_receiver_type() const = 0;
+
 #endif
 };
 
@@ -45,6 +47,7 @@ public:
     void receive_package(Package&& aPackage) override { up2iPackageStockpile->push(std::move(aPackage)); };
 
 #ifdef WITH_RECEIVER_TYPE
+
     [[nodiscard]] ReceiverType get_receiver_type() const override { return ReceiverType::STOREHOUSE; };
 #endif
 
@@ -56,6 +59,7 @@ private:
 
 using preferences_t = std::map<IPackageReceiver*, double>;
 using const_iterator = preferences_t::const_iterator;
+using iterator = preferences_t::iterator;
 
 
 class ReceiverPreferences {
@@ -68,9 +72,13 @@ public:
 
     [[nodiscard]] IPackageReceiver* choose_receiver() const;
 
-    [[nodiscard]] const preferences_t & get_preferences() const { return preferences_; };
+    [[nodiscard]] const preferences_t& get_preferences() const { return preferences_; };
 
     //iteratory
+    iterator begin() { return preferences_.begin(); }
+
+    iterator end() { return preferences_.end(); }
+
     const_iterator begin() const { return preferences_.begin(); }
 
     const_iterator end() const { return preferences_.end(); }
@@ -138,6 +146,7 @@ public:
     void receive_package(Package&& p) override { up2PackQueue_->push(std::move(p)); };
 
 #ifdef WITH_RECEIVER_TYPE
+
     [[nodiscard]] ReceiverType get_receiver_type() const override { return ReceiverType::WORKER; };
 #endif
 

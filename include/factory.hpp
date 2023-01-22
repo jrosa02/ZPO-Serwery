@@ -29,17 +29,23 @@ public:
 
     iterator find_by_id(ElementID id) {
         return std::find_if(container_.begin(), container_.end(),
-                            [&id](const auto &elem) {return elem.get_id() == id;
-        });
+                            [&id](const auto& elem) {
+                                return elem.get_id() == id;
+                            });
     }
 
     [[nodiscard]] const_iterator find_by_id(ElementID id) const {
         return std::find_if(container_.begin(), container_.end(),
-                            [&id](const auto& elem) {return elem.get_id() == id;
-        });
+                            [&id](const auto& elem) {
+                                return elem.get_id() == id;
+                            });
     }
 
-    void remove_by_id(ElementID id) { container_.erase(find_by_id(id)); }
+    void remove_by_id(ElementID id) {
+        auto node_id = find_by_id(id);
+        if (node_id != container_.end())
+            container_.erase(node_id);
+    };
 
     [[nodiscard]] const_iterator cbegin() const { return container_.cbegin(); }
 
@@ -65,7 +71,7 @@ public:
 
     NodeCollection<Ramp>::iterator find_ramp_by_id(ElementID id) { return rampCol_.find_by_id(id); }
 
-    void remove_ramp(ElementID id) { rampCol_.remove_by_id(id); }
+    void remove_ramp(ElementID id) { this -> remove_receiver(rampCol_, id); }
 
     [[nodiscard]] NodeCollection<Ramp>::const_iterator find_ramp_by_id(ElementID id) const {
         return rampCol_.find_by_id(id);
@@ -80,7 +86,7 @@ public:
 
     NodeCollection<Worker>::iterator find_worker_by_id(ElementID id) { return workerCol_.find_by_id(id); }
 
-    void remove_worker(ElementID id) { workerCol_.remove_by_id(id); }
+    void remove_worker(ElementID id) { this -> remove_receiver(workerCol_, id); }
 
     [[nodiscard]] NodeCollection<Worker>::const_iterator
     find_worker_by_id(ElementID id) const { return workerCol_.find_by_id(id); }
@@ -114,7 +120,24 @@ public:
     void do_work(Time t);
 
 private:
-    void remove_receiver(NodeCollection<IPackageReceiver>& collection, ElementID id);
+    template<class Node>
+    void remove_receiver(NodeCollection<Node>& collection, ElementID id){
+        for (auto& worker: workerCol_) {
+            ReceiverPreferences worker_receivers = worker.receiver_preferences_;
+            for (const auto& receiver: worker_receivers) {
+                if (receiver.first->get_id() == id)
+                    worker.receiver_preferences_.remove_receiver(receiver.first);
+            }
+        }
+        for (auto& ramp: rampCol_) {
+            ReceiverPreferences ramp_receivers = ramp.receiver_preferences_;
+            for (const auto& receiver: ramp_receivers) {
+                if (receiver.first->get_id() == id)
+                    ramp.receiver_preferences_.remove_receiver(receiver.first);
+            }
+        }
+        collection.remove_by_id(id);
+    }
 
     bool
     has_reachable_storage(const PackageSender* sender, std::map<const PackageSender*, NodeColor>& node_colors) const;

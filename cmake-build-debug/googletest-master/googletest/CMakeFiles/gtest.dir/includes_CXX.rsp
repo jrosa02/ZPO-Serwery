@@ -1,1 +1,1 @@
--I"C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/include" -I"C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/googletest-master/googletest/include" -I"C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/googletest-master/googletest"
+-IC:/git/ZPO-Serwery/include -IC:/git/ZPO-Serwery/googletest-master/googletest/include -IC:/git/ZPO-Serwery/googletest-master/googletest

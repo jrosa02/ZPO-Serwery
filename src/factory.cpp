@@ -78,3 +78,16 @@ void Factory::do_work(Time t) {
     for (auto& worker: workerCol_)
         worker.do_work(t);
 }
+
+// Nie mam pojęcia czemu implementacje w .cpp przy szablonach nie chcą działać
+
+//template <class Node>
+//void Factory::remove_receiver(NodeCollection<Node>& collection, ElementID id) {
+
+//}
+
+//template <class Node>
+//void NodeCollection<Node>::remove_by_id(ElementID id){
+
+//}
+
