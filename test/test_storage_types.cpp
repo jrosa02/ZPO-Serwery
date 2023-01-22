@@ -18,7 +18,6 @@ TEST(PackageQueueTest, IsFifoCorrect) {
 
     p = q.pop();
     EXPECT_EQ(p.get_id(), 2);
-
 }
 
 TEST(PackageQueueTest, IsLifoCorrect) {
