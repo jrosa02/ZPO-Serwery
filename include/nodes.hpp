@@ -57,13 +57,12 @@ private:
 };
 
 
-using preferences_t = std::map<IPackageReceiver*, double>;
-using const_iterator = preferences_t::const_iterator;
-using iterator = preferences_t::iterator;
-
-
 class ReceiverPreferences {
 public:
+    using preferences_t = std::map<IPackageReceiver*, double>;
+    using const_iterator = preferences_t::const_iterator;
+    using iterator = preferences_t::iterator;
+
     explicit ReceiverPreferences(ProbabilityGenerator pg = probability_generator) : pg_(pg) {};
 
     void add_receiver(IPackageReceiver* r);

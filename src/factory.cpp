@@ -10,7 +10,7 @@ bool Factory::has_reachable_storage(const PackageSender* sender,
 
     node_colors[sender] = VISITED;
 
-    const preferences_t pref = sender->receiver_preferences_.get_preferences();
+    const ReceiverPreferences::preferences_t pref = sender->receiver_preferences_.get_preferences();
     if (pref.empty())
         throw std::logic_error("No receivers!");
 
