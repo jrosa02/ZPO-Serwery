@@ -94,7 +94,7 @@ private:
 
 class PackageSender {
 public:
-    PackageSender() = default; //FIXME nie wiem czy to legalne
+    PackageSender() = default;
 
     PackageSender(PackageSender&& ps) = default; //Ma być default;
 
@@ -138,7 +138,7 @@ public:
 
     [[nodiscard]] Time get_package_processing_start_time() const { return procStartTime_; };
 
-    IPackageQueue* get_queue() { return up2PackQueue_;}
+    std::unique_ptr<IPackageQueue> get_queue() { return std::move(up2PackQueue_);}//FIXME idk
 
     //IPackageReceiver
     [[nodiscard]] ElementID get_id() const override { return id_; };

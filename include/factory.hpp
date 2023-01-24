@@ -147,4 +147,20 @@ private:
     NodeCollection<Storehouse> storehouseCol_;
 };
 
+enum ElementType {
+    LOADING_RAMP_IO,
+    STOREHOUSE_IO,
+    WORKER_IO,
+    LINK_IO
+};
+
+struct ParsedLineData{
+    ElementType elementType;
+    std::string parameters;
+};
+
+ParsedLineData parse_line(std::string line);
+Factory load_factory_structure(std::istream& is);
+void save_factory_structure(Factory& factory, std::ostream& v);
+
 #endif //ZPO_SERWERY_FACTORY_HPP

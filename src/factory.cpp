@@ -79,15 +79,6 @@ void Factory::do_work(Time t) {
         worker.do_work(t);
 }
 
-// Nie mam pojęcia czemu implementacje w .cpp przy szablonach nie chcą działać
+Factory load_factory_structure(std::istream& is){
 
-//template <class Node>
-//void Factory::remove_receiver(NodeCollection<Node>& collection, ElementID id) {
-
-//}
-
-//template <class Node>
-//void NodeCollection<Node>::remove_by_id(ElementID id){
-
-//}
-
+}

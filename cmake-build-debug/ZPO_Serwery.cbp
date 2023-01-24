@@ -431,6 +431,9 @@
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/test/test_Factory.cpp">
 			<Option target="ZPO_Serwery_test"/>
 		</Unit>
+		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/test/test_factory_io.cpp">
+			<Option target="ZPO_Serwery_test"/>
+		</Unit>
 		<Unit filename="C:/Users/janro/Desktop/AGH_FILES/ZPO-Serwery/test/test_nodes.cpp">
 			<Option target="ZPO_Serwery_test"/>
 		</Unit>

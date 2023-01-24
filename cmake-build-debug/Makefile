@@ -445,6 +445,30 @@ test/test_Factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/test/test_Factory.cpp.s
 .PHONY : test/test_Factory.cpp.s
 
+test/test_factory_io.obj: test/test_factory_io.cpp.obj
+.PHONY : test/test_factory_io.obj
+
+# target to build an object file
+test/test_factory_io.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/test/test_factory_io.cpp.obj
+.PHONY : test/test_factory_io.cpp.obj
+
+test/test_factory_io.i: test/test_factory_io.cpp.i
+.PHONY : test/test_factory_io.i
+
+# target to preprocess a source file
+test/test_factory_io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/test/test_factory_io.cpp.i
+.PHONY : test/test_factory_io.cpp.i
+
+test/test_factory_io.s: test/test_factory_io.cpp.s
+.PHONY : test/test_factory_io.s
+
+# target to generate assembly for a file
+test/test_factory_io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZPO_Serwery_test.dir\build.make CMakeFiles/ZPO_Serwery_test.dir/test/test_factory_io.cpp.s
+.PHONY : test/test_factory_io.cpp.s
+
 test/test_nodes.obj: test/test_nodes.cpp.obj
 .PHONY : test/test_nodes.obj
 
@@ -559,6 +583,9 @@ help:
 	@echo ... test/test_Factory.obj
 	@echo ... test/test_Factory.i
 	@echo ... test/test_Factory.s
+	@echo ... test/test_factory_io.obj
+	@echo ... test/test_factory_io.i
+	@echo ... test/test_factory_io.s
 	@echo ... test/test_nodes.obj
 	@echo ... test/test_nodes.i
 	@echo ... test/test_nodes.s
