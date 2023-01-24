@@ -54,4 +54,4 @@ add_subdirectory(googletest-master)
 target_link_libraries(ZPO_Serwery_test gmock)
 
 #Liczba etapu z pliku config
-target_compile_definitions(ZPO_Serwery_test PUBLIC EXERCISE_ID=3)
+target_compile_definitions(ZPO_Serwery_test PUBLIC EXERCISE_ID=4)

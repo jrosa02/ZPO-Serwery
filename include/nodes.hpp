@@ -132,7 +132,6 @@ class Worker : public IPackageReceiver, public PackageSender {
 public:
     Worker(ElementID id, TimeOffset pd, std::unique_ptr<IPackageQueue> q) : id_(id), processing_duration_(pd),
                                                                             up2PackQueue_(std::move(q)) {};
-
     void do_work(Time t);
 
     [[nodiscard]] TimeOffset get_processing_duration() const { return processing_duration_; };
