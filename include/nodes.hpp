@@ -138,6 +138,8 @@ public:
 
     [[nodiscard]] Time get_package_processing_start_time() const { return procStartTime_; };
 
+    IPackageQueue* get_queue() { return up2PackQueue_;}
+
     //IPackageReceiver
     [[nodiscard]] ElementID get_id() const override { return id_; };
 
