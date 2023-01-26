@@ -78,7 +78,3 @@ void Factory::do_work(Time t) {
     for (auto& worker: workerCol_)
         worker.do_work(t);
 }
-
-Factory load_factory_structure(std::istream& is){
-
-}
